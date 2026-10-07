@@ -1,0 +1,31 @@
+
+prompt:
+
+atue como um especialista em N8N e crie uma automação com objetivo de automatizar atendimento e agendamentos em clinicas de 
+nutrição, odontologia ou psicologia.
+
+Público ou responsável:
+secretária ou medico(a) resposanvel pelo atendimento
+
+Resultado esperado:
+ter um bot de atendimento com pequena anamnese, colher dados para preencher na planilha, agendar a consulta com
+dia e horario inseridos automaticamente na agenda e confirmação com cliente novamente para o whatsapp, posteriormente com 
+envio de mensagem de confirmação da consulta 24hrs antes do horário agendado.
+
+
+Ferramentas envolvidas:
+ Google Sheets, google agenda e whatsapp
+
+Fluxo desejado:
+1. Receber uma mensagem no whatsapp com interesse em uma consulta (paciente)
+2. Bot faz perguntas pré definidas como uma pequena anamnese como dados(nome, e-mail, telefone, endereço), sintomas(porque 
+busca o atendimento) e datas de agendamento de preferencia
+3. Registrar os dados na planilha
+4. agendar no google calendario conforme preferencia e disponibilidade da agenda (data/hora)
+5. Enviar mensagem de whatsapp de confirmação do agendamento
+6. enviar mensagem de whatsapp de confirmar presença 24 horas antes do dia da consulta agendada.
+
+Regras importantes:
+caso cliente pare de responder mensagem em 1hr finalizar o bot automaticamente.
+caso cliente não responda a confirmação presença 24horas antes da consulta, cancelar consulta e liberar horario agendado na agenda
+caso cliente responda que não possa ir no horario marcado enviar novas opções de dias e horarios
